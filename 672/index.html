@@ -1,6 +1,6 @@
 <html manifest="cache.manifest">
 <head>
-<title>6.72 Exploit Menu By Leeful v1 Beta Test_add todex</title>
+<title>6.72 Exploit Menu By Leeful v1 Beta Test</title>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";},1000);setTimeout(function(){window.msgs.innerHTML="6.72 Exploit Host Menu";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
@@ -15,13 +15,13 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <div style="text-align:center">
 <button onclick="load_exploit(); return false"> Load Exploit </button> >>
 <button onclick="load_mira(); return false"> Load Mira </button>
-<button onclick="load_mira_unofficial(); return false"> Load Mira (Unofficial)</button>
 <br><br>
 <button onclick="load_exploit_mira(); return false"> Load Exploit + Mira Together </button>
+<br><br>
+<button onclick="load_todex(); return false"> Load Todex for Error ce-30391-6 </button>
 <br><br><br>
 <h1 style='font-size:15px;text-align:center;'>PAYLOADS</h1>
 <button onclick="load_binloader(); return false"> Bin Loader </button>
-<button onclick="load_todex(); return false"> todex </button>
 <button onclick="load_ftp(); return false"> FTP </button>
 <button onclick="load_dumper(); return false"> Dumper </button>
 <button onclick="load_linux(); return false"> Linux </button>
@@ -60,13 +60,6 @@ var script = document.createElement('script');script.src = "pl_mira.js";document
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-function load_mira_unofficial(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Mira ...</h1>";
-LoadedMSG="Mira Loaded ✔";
-var script = document.createElement('script');script.src = "pl_mira_unofficial.js";document.getElementsByTagName('head')[0].appendChild(script);
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
-}
-
 function load_ftp(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading FTP ...</h1>";
 LoadedMSG="FTP Loaded ✔";
@@ -85,13 +78,6 @@ function load_linux(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Linux ...</h1>";
 LoadedMSG="Linux Loaded ✔";
 var script = document.createElement('script');script.src = "pl_linux.js";document.getElementsByTagName('head')[0].appendChild(script);
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
-}
-
-function load_todex(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Todex ...</h1>";
-LoadedMSG="Todex loaded ✔";
-var script = document.createElement('script');script.src = "pl_todex.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
@@ -141,6 +127,13 @@ function load_dbRestore(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading DB Restore ...</h1>";
 LoadedMSG="DB Restore Loaded ✔";
 var script = document.createElement('script');script.src = "pl_dbRestore.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function load_todex(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Todex ...</h1>";
+LoadedMSG="Todex Loaded ✔";
+var script = document.createElement('script');script.src = "pl_todex.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 </script>
